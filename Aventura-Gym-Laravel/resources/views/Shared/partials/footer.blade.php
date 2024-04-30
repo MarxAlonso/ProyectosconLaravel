@@ -4,7 +4,7 @@
         <div class="row">
             <div class="footer-col col-sm-6 col-lg-3">
                 <br>
-                <a href="inicio"><img src="views/images/aventura-gym.webp" class="logo-footer" width="150" alt="Logo empresa"></a>
+                <a href="/"><img src="{{asset('images/aventura-gym.webp')}}" class="logo-footer" width="150" alt="Logo empresa"></a>
                 <br><br>
                 <span class="info-gym"><b>Medios de pagos</b></span>
                 <p class="info-gym">Aceptamos todos los medios de pago</p>
@@ -12,7 +12,7 @@
             </div>
             <div class="footer-col col-sm-6 col-lg-3">
                 <br>
-                <a class="menus" href="inicio">Inicio</a>
+                <a class="menus" href="/">Inicio</a>
                 <a class="menus" href="nosotros">Nosotros</a>
                 <a class="menus" href="servicios">Servicios</a>
                 <a class="menus" href="locales">Nuestro Locales</a>

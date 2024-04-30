@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="{{ asset('images/aventura-gym.webp')}}">
     <!-- Estilos css y bootstrap -->
     <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="views/css/bootstrap.css">
+    <link rel="stylesheet" href="{{asset('/css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('/css/inicio.css')}}">
     <link rel="stylesheet" href="{{asset('/css/locales.css')}}">
@@ -27,10 +27,10 @@
     @include('Shared.partials.footer')
     
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-    <script src="views/js/jquery-3.5.1.min.js"></script>
-    <script src="views/js/bootstrap.bundle.js"></script>
-    <script src="views/js/bootstrap.min.js"></script>
-    <script src="views/js/seleccionar-imagen.js"></script>
+    <script src="{{asset('/js/jquery-3.5.1.min.js')}}"></script>
+    <script src="{{asset('/js/bootstrap.bundle.js')}}"></script>
+    <script src="{{asset('/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/js/seleccionar-imagen.js')}}"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
