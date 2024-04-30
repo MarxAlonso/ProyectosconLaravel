@@ -5,7 +5,7 @@
             <i class="bi bi-list"></i>
         </label>
         <a href="inicio" class="enlace">
-            <img src="views/images/aventura-gym.webp" alt="Aventura Gym Logo" class="logo">
+            <img src="{{asset('images/aventura-gym.webp')}}" alt="Aventura Gym Logo" class="logo">
         </a>
         <ul>
             <li><a class="active menus-var" href="/"><b>INICIO</b></a>
