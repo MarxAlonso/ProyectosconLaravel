@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('/css/inicio.css')}}">
     <link rel="stylesheet" href="{{asset('/css/locales.css')}}">
+    <link href="{{ asset ('/css/fileinput.min.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{{ asset ('/css/formulario.css') }}" media="all" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="{{ asset('/css/js/fileinput.min.js') }}" type="text/javascript"></script>
 </head>
 
 <body style="background: linear-gradient(255deg, #2e2d2dfb, #000);">
@@ -30,6 +33,7 @@
     <script src="{{asset('/js/jquery-3.5.1.min.js')}}"></script>
     <script src="{{asset('/js/bootstrap.bundle.js')}}"></script>
     <script src="{{asset('/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/js/app.js')}}"></script>
     <script src="{{asset('/js/seleccionar-imagen.js')}}"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>

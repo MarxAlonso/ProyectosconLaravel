@@ -12,3 +12,4 @@ Route::get('/locales', [LocalesController::class, 'index']);
 Route::get('/nosotros', [NosotrosController::class, 'index']);
 Route::get('/servicios', [ServicesController::class, 'index']);
 Route::get('/contacto', [ContactoController::class, 'index']);
+Route::post('enviar-form-contacto', [ContactoController::class, 'enviarFormulario']);
