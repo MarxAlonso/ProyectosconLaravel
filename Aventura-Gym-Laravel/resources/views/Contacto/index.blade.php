@@ -1,0 +1,86 @@
+<section class="contactos p-5" style="z-index:2;">
+    <div class="container-fluid" style="margin-bottom: 15px;">
+        <div class="row justify-content-center pregunta">
+            <div class="col-md-8 py-md-5 texto2" style="background-color: #0C6EB6; border-top-left-radius:18px; border-bottom-left-radius:18px">
+                <h4 class="text-left titulo-envianos">ENVÍANOS UN MENSAJE</h4><br>
+                <form action="controller/enviar-correo-contact.php" method="post">
+                    <div class="row pt-5 justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="formulario__grupo-input" style="margin-bottom: 90px;">
+                                <input required type="text" pattern="^[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ\s]+$" class="form-control inp" id="nombres" name="nombres" placeholder="Nombres y Apellidos" style="background-color: transparent; border-top: none; border-right: none; border-left: none; border-bottom: 2px solid white; color:white;" />
+                                <p id="obligatorio-message" style="color: red; display: none;">*Este campo es obligatorio</p>
+                                <p id="incorrecto-message" style="color: red; display: none;">*Este campo solo debe contener letras</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="input-group flex-nowrap  " style="margin-bottom: 90px;">
+                                <input style="background-color: transparent; border-top: none; border-right: none; border-left: none; border-bottom: 2px solid white;color:white; " type="text" class="form-control inp" id="telefono" name="telefono" pattern="[2-7][0-9]{6}" oninvalid="setCustomValidity('Ingrese un número valido para Lima-Perú')" oninput="setCustomValidity('')" maxlength="7" minlength="7" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="Número telefónico" aria-describedby="basic-addon1" autocomplete="off">
+                            </div>
+                            <p id="obligatorio-mesage-tel" style="color: red; display: none;">*Este campo es obligatorio</p>
+                            <p id="incorrecto-message-tel" style="color: red; display: none;">*Ingrese solo números en este campo</p>
+                        </div>
+                        <div class="col-lg-5" style="margin-bottom: 90px;">
+                            <input required type="email" class="form-control inp" id="email" name="email" placeholder="Email" style="background-color: transparent; border-top: none; border-right: none; border-left: none; border-bottom: 2px solid white; color:white;" />
+                            <p id="email-validation-message" class="validation-message"></p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="input-group flex-nowrap" style="margin-bottom: 90px;">
+                                <input required type="text" class="form-control inp" id="celular" name="celular" pattern="[9][0-9]{8}" oninvalid="setCustomValidity('Ingrese un numero valido, debe ser de nueve digitos y valido para Lima-Perú')" oninput="setCustomValidity('')" maxlength="9" minlength="9" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="Célular" style="background-color: transparent; border-top: none; border-right: none; border-left: none; border-bottom: 2px solid white;color:white;">
+                            </div>
+                            <p id="obligatorio-message-cel" style="color: red; display: none;">*Este campo es obligatorio</p>
+                            <p id="incorrecto-message-cel" style="color: red; display: none;">*Ingrese solo números en este campo</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="formulario__grupo-input" style="margin-bottom: 90px;">
+
+                                <input required type="text" class="form-control inp" id="dni" name="dni" pattern="[0-9]{8}" oninvalid="setCustomValidity('Ingrese un numero valido, debe ser de nueve digitos y valido para Lima-Perú')" oninput="setCustomValidity('')" maxlength="8" minlength="8" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="DNI" style="background-color: transparent; border-top: none; border-right: none; border-left: none; border-bottom: 2px solid white;color:white;">
+                            </div>
+                            <p id="obligatorio-mesage-tel" style="color: red; display: none;">*Este campo es obligatorio</p>
+                            <p id="incorrecto-message-tel" style="color: red; display: none;">*Ingrese solo números en este campo</p>
+                        </div>
+                        <div class="col-lg-5" style="margin-bottom: 90px;">
+                            <select required class="form-control inp" id="tipoSeguro" name="tipoSeguro" style="background-color: transparent; border-top: none; border-right: none; border-left: none; border-bottom: 2px solid white;">
+                                <option disabled selected>Local que desea información:</option>
+                                <option>Santa Ana</option>
+                                <option>Naranjal</option>
+                                <option>Universitaria 2751</option>
+                                <option>Universitaria 3427</option>
+                                <option>San Martin de Porres</option>
+                                <option>Santa Anita</option>
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-8">
+                            <label class="pt-3">Mensaje</label>
+                            <textarea required class="form-control" rows="3" id="mensajePersona" name="mensajePersona" style="background-color: transparent; border-top: none; border-right: none; border-left: none; border-bottom: 2px solid white; color:white;"></textarea>
+                            <br>
+                        </div>
+
+                        <div class="col-lg-12 text-center mb-4 mt-3">
+                            <span class="help-block">
+                                <input required class="btn btn-warning btn-lg marginlastmin justify-content-center" type="submit" name="submit" value="Enviar" />
+                                <span class="spinner-border text-success spinner-border-sm" id="spinnerPersona" role="status" aria-hidden="true" style="width: 1.4rem;height: 1.4rem;margin-right: 8px;display: none;">
+                                </span>
+                            </span>
+                        </div>
+                    </div> <!-- /row -->
+                </form>
+            </div>
+            <div class="col-md-4 py-md-5 bordecolor" style="background-color: #1D870C; border-top-right-radius:18px; border-bottom-right-radius:18px">
+                <div class="texto2">
+                    <h4 class="text-left" style="margin-left: 30px; margin-bottom: 40px;">Contacto Info</h4>
+                    <div class="contactoinfo" style="margin-bottom: 40px;"><i class="bi bi-phone"></i>
+                        <p class="infop">+51 999 875 210</p>
+                    </div>
+
+                    <div class="text-left contactoinfo">
+                        <a href="ibseguros@corpigroup.com" style="text-decoration: none; color:white;"><i class="bi bi-envelope"></i>
+                            <p class="infop">aventuragym@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
