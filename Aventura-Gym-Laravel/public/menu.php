@@ -8,7 +8,7 @@
             <img src="views/images/aventura-gym.webp" alt="Aventura Gym Logo" class="logo">
         </a>
         <ul>
-            <li><a class="active menus-var" href="/"><b>INICIO</b></a>
+            <li><a class="active menus-var" href="inicio"><b>INICIO</b></a>
             <li><a href="nosotros" class="menus-var"><b>NOSOTROS</b></a></li>
             <li><a href="servicios"><b>SERVICIOS</b></a></li>
             <li><a class="menus-var" href="https://aventuragym-mrx.blogspot.com/" target="_blank"><b>BLOG</b></a></li>
