@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventura Gym</title>
     <!-- Logo de la empresa -->
-    <link rel="shortcut icon" href="views/images/aventura-gym.webp">
+    <link rel="shortcut icon" href="{{asset('images/aventura-gym.webp')}}">
     <!-- Estilos css y bootstrap -->
     <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/bootstrap.css')}}">
@@ -27,7 +27,9 @@
     </div>
 
     @include('Shared.partials.footer')
+
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="{{asset('/js/app.js')}}"></script>
 <script src="{{asset('/js/jquery-3.5.1.min.js')}}"></script>
 <script src="{{asset('/js/bootstrap.bundle.js')}}"></script>
 <script src="{{asset('/js/bootstrap.min.js')}}"></script>

@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class ServicesController extends Controller
 {
     public function index()
     {
         $data = [
-            'renderBody' => view('Home/Index')
+            'renderBody' => view('Services/Index')
         ];
 
         return view('Shared/_Layout', $data);
