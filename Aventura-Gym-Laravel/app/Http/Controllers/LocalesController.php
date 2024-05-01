@@ -24,4 +24,37 @@ class LocalesController extends Controller
 
         return view('Shared/_Layout', $data);
     }
+    public function localnaranjal()
+    {
+        $data = [
+            'renderBody' => view('Locales/localeslima/naranjal')
+        ];
+
+        return view('Shared/_Layout', $data);
+    }
+    public function localuniversitaria()
+    {
+        $data = [
+            'renderBody' => view('Locales/localeslima/universitaria')
+        ];
+
+        return view('Shared/_Layout', $data);
+    }
+    public function localsmp()
+    {
+        $data = [
+            'renderBody' => view('Locales/localeslima/smp')
+        ];
+
+        return view('Shared/_Layout', $data);
+    }
+
+    public function localsantaanita()
+    {
+        $data = [
+            'renderBody' => view('Locales/localeslima/santaanita')
+        ];
+
+        return view('Shared/_Layout', $data);
+    }
 }

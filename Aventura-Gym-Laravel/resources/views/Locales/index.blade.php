@@ -184,7 +184,7 @@
                         <li>Contamos con cobertura frente a accidentes.</li>
                         <li>Ofrecemos cobertura internacional para emergencias médicas cuando estás fuera de tu país de origen.</li>
                     </ul>
-                    <a class="enlace-leer" href="santana">Leer más</a>
+                    <a class="enlace-leer" href="local-santana">Leer más</a>
                 </div>
             </div>
             <div class="info-div clearfix">
@@ -197,7 +197,7 @@
                         <li>Cubrimos contra el robo con fractura del medio conductor.</li>
                         <li>Cubrimos pérdidas o daños a la mercancía durante el tránsito.</li>
                     </ul>
-                    <a class="enlace-leer" href="Transporte">Leer más</a>
+                    <a class="enlace-leer" href="local-naranjal">Leer más</a>
                 </div>
             </div>
             <div class="info-div clearfix">
@@ -210,7 +210,7 @@
                         <li>Asesoramiento personalizado de nuestro equipo de expertos en seguros contra incendios.</li>
                         <li>Proceso de reclamaciones rápido y eficiente.</li>
                     </ul>
-                    <a class="enlace-leer" href="Incendio">Leer más</a>
+                    <a class="enlace-leer" href="local-universitaria">Leer más</a>
                 </div>
             </div>
         </div>
@@ -242,7 +242,7 @@
                             <li>Asesoramiento personalizado de nuestro equipo de expertos en seguros de Responsabilidad Civil.</li>
                             <li>Proceso de reclamaciones rápido y eficiente.</li>
                         </ul>
-                        <a class="enlace-leer" href="Responsabilidad-Civil">Leer más</a>
+                        <a class="enlace-leer" href="local-smp">Leer más</a>
                     </div>
                 </div>
                 <div class="info-div clearfix">
@@ -255,7 +255,7 @@
                             <li>Asesoramiento personalizado de nuestro equipo de expertos en seguros marítimos.</li>
                             <li>Proceso de reclamaciones rápido y eficiente.</li>
                         </ul>
-                        <a class="enlace-leer" href="Cascos-Maritimos">Leer más</a>
+                        <a class="enlace-leer" href="local-santanita">Leer más</a>
                     </div>
                 </div>
             </div>
