@@ -15,4 +15,13 @@ class LocalesController extends Controller
 
         return view('Shared/_Layout', $data);
     }
+
+    public function localsantana()
+    {
+        $data = [
+            'renderBody' => view('Locales/localeslima/santana')
+        ];
+
+        return view('Shared/_Layout', $data);
+    }
 }

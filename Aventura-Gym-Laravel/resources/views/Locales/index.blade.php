@@ -184,7 +184,7 @@
                         <li>Contamos con cobertura frente a accidentes.</li>
                         <li>Ofrecemos cobertura internacional para emergencias médicas cuando estás fuera de tu país de origen.</li>
                     </ul>
-                    <a class="enlace-leer" href="seguros-salud">Leer más</a>
+                    <a class="enlace-leer" href="santana">Leer más</a>
                 </div>
             </div>
             <div class="info-div clearfix">
