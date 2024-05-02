@@ -42,12 +42,12 @@ class ContactoController extends Controller
         $mail->CharSet = 'UTF-8';
 
         // Destinatario y remitente
-        $mail->setFrom('ibconstruye@corporacionibgroup.pe', 'CORPORACION IBGROUP');
+        $mail->setFrom('aventuragym@gmail.com', 'AVENTURA GYM');
         $mail->addAddress('marxchip99@gmail.com'); // Cambiar esto al campo de correo electrónico del formulario
 
         // Contenido del correo
         $mail->isHTML(true);
-        $mail->Subject = 'IBCarsell Contacto';
+        $mail->Subject = 'AventuraGym Contacto';
         $mail->Body = $contenidoCorreo;
 
         // Enviar el correo

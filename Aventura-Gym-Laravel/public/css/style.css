@@ -2,7 +2,7 @@
 /***  NAV DE LOGO Y MENU **/
 .header_section {
     /* background-color: #000000; */
-    background: linear-gradient(2555deg, #1f1e1efb, #000);
+    background: linear-gradient(2555deg, #4f78a7fb, #11297a);
     padding: 10px 0;
   }
 .navegaciones {
@@ -53,6 +53,31 @@
     top: 30px;
     display: block;
 }
+.bi-moon{
+    background-color: #1b2d68;
+    border-radius: 50%;
+    padding: 5px 8px;
+    color: white;
+}
+.bi-brightness-high{
+    background-color: #e4af1f;
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+.light-mode {
+    /* Estilos para el modo claro */
+    background-color: #fff; /* Color de fondo claro */
+    color: #333; /* Color de texto claro */
+    /* Agrega cualquier otro estilo adicional para el modo claro */
+}
+
+.dark-mode {
+    /* Estilos para el modo oscuro */
+    background: linear-gradient(2555deg, #2e2d2dfb, #000); /* Color de fondo oscuro */
+    color: #fff; /* Color de texto oscuro */
+    /* Agrega cualquier otro estilo adicional para el modo oscuro */
+}
+
 
 li a.active,
 li a:hover {
@@ -150,6 +175,16 @@ a.contact {
 }
 /*** FIN NAV DE LOGO Y MENU **/
 
+/* Apartado de nosotros*/
+.info-nosotros{
+    margin-top: 100px; border-radius: 50px; background: linear-gradient(2555deg, #4f78a7fb, #11297a);
+    margin: 20px; border:none;  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); color: white;
+}
+.info-nosotros.dark-mode{
+    background: linear-gradient(2555deg, #1e1f1ffb, #000);/* Cambia el color de fondo del hero en modo oscuro */
+    color: #fff; /* Cambia el color del texto del hero en modo oscuro */
+}
+
 /*Apartado de redes*/
 .redes {
     margin-bottom: 25px;
@@ -193,13 +228,16 @@ a.contact {
 }
 
 .reserva{
-    margin-top: 50em;
     margin-bottom: 100px; 
     padding: 50px; 
     border-radius: 50px;
-    background: linear-gradient(265deg, #313131fb, #000); margin: 20px; border:none; 
+    background: linear-gradient(2555deg, #4f78a7fb, #11297a);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); 
     color: white;
+}
+
+.reserva.dark-mode{
+    background: linear-gradient(265deg, #313131fb, #000); margin: 20px; border:none; 
 }
 /*Fin apartado de servicios*/
 
@@ -248,14 +286,72 @@ a.contact {
     }
 }
 
+/* Inicio apartado de contacto*/
+.contact_section .contact_form-container input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    width: 90%;
+    margin: 15px 0;
+    background-color: transparent;
+  }
+
+  .contact_section .contact_form-container input::-webkit-input-placeholder {
+    color: #595959;
+    font-size: 14px;
+  }
+  
+  .contact_section .contact_form-container input:-ms-input-placeholder {
+    color: #595959;
+    font-size: 14px;
+  }
+  
+  .contact_section .contact_form-container input::-ms-input-placeholder {
+    color: #595959;
+    font-size: 14px;
+  }
+  
+  .contact_section .contact_form-container input::placeholder {
+    color: #595959;
+    font-size: 14px;
+  }
+  
+  .contact_section .contact_form-container input.message_input {
+    margin-top: 80px;
+  }
+  
+  .contact_section .contact_form-container button {
+    border: none;
+    background-color: #0e35f6;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 55px;
+    border-radius: 30px;
+    text-transform: uppercase;
+  }
+  
+  .contact_section .contact_form-container button:hover {
+    background-color: #082de2;
+  }
+  
+  .contact_section .map-box #map {
+    width: 100%;
+    height: 100%;
+  }
+/* Fin apartado de contacto */
+  
 /*Inicio apartado de Footer*/
 .footer {
     padding: 70px 0;
 }
 
 .footer-tipo{
-    background: linear-gradient(2555deg, #1f1e1efb, #000);
+    background: linear-gradient(2555deg, #4f78a7fb, #11297a);
 }
+.footer-tipo.dark-mode {
+    background: linear-gradient(2555deg, #1e1f1ffb, #000);/* Cambia el color de fondo del hero en modo oscuro */
+    color: #fff; /* Cambia el color del texto del hero en modo oscuro */
+  }
 .logo-footer{
     border-radius: 50%; 
     border: 1px solid #fff;

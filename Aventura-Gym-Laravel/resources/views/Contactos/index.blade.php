@@ -103,7 +103,7 @@
                 </div>
                 <div class="align-items-center col-6 pr-0 mx-2">
                     <p class="mb-1 font-weight-bold">Web: </p>
-                    <p class="mb-1" style="font-size: 15px;">http://ibcarsell.com/</p>
+                    <p class="mb-1" style="font-size: 15px;">https://aventuragym-mrx.blogspot.com</p>
                 </div>
             </div>
             <br>
@@ -123,22 +123,20 @@
                 </div>
                 <div class="align-items-center col-10 pr-0 mx-2">
                     <p class="mb-1 font-weight-bold">E-Mail: </p>
-                    <p class="mb-1" style="font-size: 15px;">ibcarsell@corpibgroup.com</p>
+                    <p class="mb-1" style="font-size: 15px;">aventuragym@gmail.com</p>
                 </div>
             </div>
             <div class="d-flex flex-column mb-4">
                 <p class="font-weight-bold">Siguenos en: </p>
                 <div class="d-flex flex-row">
-                    <a class="nav-link text-muted me-3" href="https://www.facebook.com/IBOutplacementOficial/"
+                    <a class="nav-link text-muted me-3" href="https://www.facebook.com/"
                         target="_black"><i class="fab fa-facebook-f" style="color:#0000ff; font-size:22px;"></i></a>
-                    <a class="nav-link text-muted me-3" href="https://twitter.com/ib_outplacement" target="_black"><i
+                    <a class="nav-link text-muted me-3" href="https://twitter.com/" target="_black"><i
                             class="fab fa-twitter" style="color:#00ffff; font-size:22px;"></i></a>
-                    <a class="nav-link text-muted me-3" href="https://www.linkedin.com/company/iboutplacement"
+                    <a class="nav-link text-muted me-3" href="https://www.linkedin.com/"
                         target="_black"><i class="fab fa-linkedin" style="color:#008080; font-size:22px;"></i></a>
-                    <a class="nav-link text-muted me-3" href="https://www.instagram.com/iboutplacement/" target="_black"><i
+                    <a class="nav-link text-muted me-3" href="https://www.instagram.com/" target="_black"><i
                             class="fab fa-instagram" style="color:rgb(223,27,100); font-size:22px;"></i></a>
-                    <a class="nav-link text-muted me-3" href="https://www.youtube.com/channel/UC9NkcDwe6-P37cHXkn1XBcA/"
-                        target="_black"><i class="fab fa-youtube" style="color:red; font-size:22px;"></i></a>
                 </div>
             </div>
         </div>

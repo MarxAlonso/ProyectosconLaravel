@@ -1,23 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aventura Gym</title>
-    <!-- Logo de la empresa -->
-    <link rel="shortcut icon" href="{{asset('images/aventura-gym.webp')}}">
-    <!-- Estilos css y bootstrap -->
-    <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/inicio.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/locales.css')}}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ asset ('/images/aventura-gym.webp') }}" type="image/x-icon" />
+
+    <title>AventuraGym</title>
+    
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <link href="{{ asset('node_modules/bootstrap-icons/font/bootstrap-icons.css') }}" rel="stylesheet">
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('/css/style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/locales.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/inicio.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"/>
+    <link href="{{ asset ('/css/formstyle.css') }}" media="all" rel="stylesheet" type="text/css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script>
+        function solonumeros(e){
+            key=e.keyCode || e.which;
+
+            teclado=String.fromCharCode(key);
+
+            numeros="0123456789"
+
+            especiales="8-37-38-46"
+
+            teclado_especial=false;
+
+            for(var i in especiales){
+                if(key==especiales[i]){
+                    teclado_especial=true;
+                }
+            }
+            if(numeros.indexOf(teclado)==-1 && !teclado_especial){
+                return false;
+            }
+        }
+    </script>
+   
+<?php $tag = "Google tag (gtag.js)";?>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TDZXPGDRC0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TDZXPGDRC0');
+</script>
+
 </head>
 
-<body style="background: linear-gradient(255deg, #2e2d2dfb, #000);">
+<body>
+
     @include('Shared.partials.header')
 
     <div class="container-fluid" style="flex: 1;padding-right:0;padding-left:0px">
@@ -27,28 +76,17 @@
     </div>
 
     @include('Shared.partials.footer')
-
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-<script src="{{asset('/js/app.js')}}"></script>
-<script src="{{asset('/js/jquery-3.5.1.min.js')}}"></script>
-<script src="{{asset('/js/bootstrap.bundle.js')}}"></script>
-<script src="{{asset('/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('/js/seleccionar-imagen.js')}}"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
-<script href="views/js/bootstrap.js"></script>
-<script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-12PnpHPfZlDDU+1+AwhEaHzI7v+B3Nu7x6v2WP5a2rw5wr2jtU3RPJ+E7zpcB1B8" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-LFw3A8DizQ7y9yUZeGyDF9+uGpGnQ4Jxk3fxzq8tJ3J3gcGzGFiqLQ9LG6FtfdE7" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/c1eae85dfa.js" crossorigin="anonymous"></script>
-<script>
-    new WOW().init();
-</script>
-</body>
-
-</html>
-
     
+
+    <div class="preloader hidden">
+    
+    <div class="lds-roller">
+    </div>
+
+    <script type="text/javascript" src="{{ asset('/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/js/app.js') }}"></script>      
+    <script type="text/javascript" src="{{ asset('/js/script.js') }}"></script>      
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 <div class="container-fluid px-5" style="margin-bottom: 60px;  padding-bottom: 50px;">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 card w-200 h-100 p-5 m-5 mx-auto" style="margin-top: 100px; border-radius: 50px; background: linear-gradient(265deg, #313131fb, #000); margin: 20px; border:none;  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); color: white;">
+        <div class="col-12 col-md-10 col-lg-8 card w-200 h-100 p-5 m-5 mx-auto info-nosotros">
             <h3><b>¿Quiénes somos?</b></h3><br>
             <h3 style="margin-top: 30px;"><b>Visión:</b></h3><br>
             <p>Nos vemos como líderes en el bienestar físico y mental, siendo reconocidos por nuestra excelencia en la calidad del servicio, la innovación en programas de entrenamiento y la creación de comunidades saludables en cada uno de nuestros locales. Nos esforzamos por inspirar y transformar vidas, promoviendo un estilo de vida activo y equilibrado en cada individuo que se una a nuestra familia de gimnasios.</p><br>
