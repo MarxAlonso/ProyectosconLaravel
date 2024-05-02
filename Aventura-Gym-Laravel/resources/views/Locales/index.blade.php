@@ -315,9 +315,9 @@
 
         for (var i = 0; i < seguros.length; i++) {
             var seguro = seguros[i];
-            var nombreSeguro = seguro.getElementsByClassName('info-text')[0].getElementsByTagName('h3')[0].innerText.toLowerCase();
+            var nombreLocal = seguro.getElementsByClassName('info-text')[0].getElementsByTagName('h3')[0].innerText.toLowerCase();
 
-            if (nombreSeguro.includes(textoBusqueda)) {
+            if (nombreLocal.includes(textoBusqueda)) {
                 seguro.style.display = 'block';
             } else {
                 seguro.style.display = 'none';
