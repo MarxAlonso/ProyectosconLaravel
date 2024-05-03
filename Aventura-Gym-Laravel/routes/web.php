@@ -23,3 +23,8 @@ Route::get('/contacto', [ContactoController::class, 'index']);
 Route::get('/nosotros', [NosotrosController::class, 'index']);
 Route::get('/servicios', [ServicesController::class, 'index']);
 Route::get('/terminos-condiciones', [TerminosController::class, 'index']);
+
+/* Apartado para validar los formularios */
+Route::post('enviar-form-contacto', [ContactoController::class, 'enviarFormulario']);
+Route::post('enviar-form-contacto-personal', [ContactoController::class, 'enviarFormularioPersonal']);
+/* Fin apartado para validar los formularios */

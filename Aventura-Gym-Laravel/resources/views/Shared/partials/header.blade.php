@@ -2,7 +2,6 @@
     <nav class="navegaciones">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            <!--<img src="{{asset('images/barra-menu.png')}}" alt="Barra" class="barra">-->
             <i class="bi bi-list"></i>
         </label>
         <a href="inicio" class="enlace">
