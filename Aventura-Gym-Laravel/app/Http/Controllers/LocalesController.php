@@ -19,7 +19,7 @@ class LocalesController extends Controller
     public function localsantana()
     {
         $data = [
-            'renderBody' => view('Locales/localeslima/santana')
+            'renderBody' => view('localeslima/santana')
         ];
 
         return view('Shared/_Layout', $data);
@@ -27,7 +27,7 @@ class LocalesController extends Controller
     public function localnaranjal()
     {
         $data = [
-            'renderBody' => view('Locales/localeslima/naranjal')
+            'renderBody' => view('localeslima/naranjal')
         ];
 
         return view('Shared/_Layout', $data);
@@ -35,7 +35,7 @@ class LocalesController extends Controller
     public function localuniversitaria()
     {
         $data = [
-            'renderBody' => view('Locales/localeslima/universitaria')
+            'renderBody' => view('localeslima/universitaria')
         ];
 
         return view('Shared/_Layout', $data);
@@ -43,7 +43,7 @@ class LocalesController extends Controller
     public function localsmp()
     {
         $data = [
-            'renderBody' => view('Locales/localeslima/smp')
+            'renderBody' => view('localeslima/smp')
         ];
 
         return view('Shared/_Layout', $data);
@@ -52,7 +52,7 @@ class LocalesController extends Controller
     public function localsantaanita()
     {
         $data = [
-            'renderBody' => view('Locales/localeslima/santaanita')
+            'renderBody' => view('localeslima/santaanita')
         ];
 
         return view('Shared/_Layout', $data);

@@ -22,6 +22,7 @@ $(document).ready(function(){
         $('input').toggleClass("dark-mode");
         $('.info-nosotros').toggleClass("dark-mode");
         $('.reserva').toggleClass("dark-mode");
+        $('.local-santana').toggleClass("dark-mode");
         // Cambiar el ícono del botón entre luna y sol
         $(this).toggleClass("bi-moon bi-brightness-high");
 
