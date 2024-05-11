@@ -1,10 +1,8 @@
-
-                            
 /*-- -------------------------- -->
 <---            Hero            -->
 <--- -------------------------- -*/
 .hero{
-  background: linear-gradient(2555deg, #4f78a7fb, #11297a);
+  background: linear-gradient(255deg, #11297a, #017732 , #7bc090 );
 }
 /* Estilos para el modo oscuro del hero */
 .hero.dark-mode {
@@ -13,8 +11,7 @@
 }
 
 /* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    
+@media only screen and (min-width: 0rem) {    
     #hero-856 {
       width: 100%; /* La sección ocupa todo el ancho de la página */
       height: 100vh; /* La sección ocupa el 100% del alto de la ventana */
@@ -159,10 +156,8 @@
         }
         #hero-856 .cs-content {
           width: 40vw;
-          /* prevents flex-box from squishing it */
           flex: none;
           align-items: flex-start;
-          /* sends it to the right in the 2nd position */
           order: 2;
         }
         #hero-856 .cs-title,
@@ -170,13 +165,11 @@
           text-align: left;
         }
         #hero-856 .cs-picture {
-          /* 623px - 814px */
           height: clamp(38.9375rem, 60vw, 50.875rem);
         }
         #hero-856 .cs-wave {
           width: 100%;
           left: 0;
-          /* flips it horizontally */
           transform: scaleX(-1);
         }
         #hero-856 .cs-picture img {
@@ -186,10 +179,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            /* makes image act as a background image */
             object-fit: cover;
-            /* ensures the top of the images is at the top of the container, no heads getting cut off */
             object-position: top;
           }
       }
-      

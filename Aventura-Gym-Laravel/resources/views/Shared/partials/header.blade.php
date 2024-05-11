@@ -4,8 +4,9 @@
         <label for="check" class="checkbtn">
             <i class="bi bi-list"></i>
         </label>
-        <a href="inicio" class="enlace">
+        <a href="/" class="enlace">
             <img src="{{asset('images/aventura-gym.webp')}}" alt="Aventura Gym Logo" class="logo">
+            <!--<h4>AventuraGym</h4>-->
         </a>
         <ul>
             <li><a class="active menus-var" href="/"><b>INICIO</b></a>

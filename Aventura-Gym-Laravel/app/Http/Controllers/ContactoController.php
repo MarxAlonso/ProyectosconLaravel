@@ -26,7 +26,7 @@ class ContactoController extends Controller
         $contenidoCorreo .= '<strong>Nombres: </strong>' . $request->input('nombres') . "<br>";
         $contenidoCorreo .= '<strong>Correo: </strong>' . $request->input('correo') . "<br>";
         $contenidoCorreo .= '<strong>Telefono: </strong>' . $request->input('telefono') . "<br>";
-        $contenidoCorreo .= '<strong>Interes: </strong>' . $request->input('interes') . "<br>";
+        $contenidoCorreo .= '<strong>Local Interes: </strong>' . $request->input('interes') . "<br>";
         $contenidoCorreo .= '<strong>Mensaje: </strong>' . $request->input('comentario') . "<br>";
         
         // Enviar el correo electrónico
@@ -82,12 +82,12 @@ class ContactoController extends Controller
         $mail->CharSet = 'UTF-8';
 
         // Destinatario y remitente
-        $mail->setFrom('ibconstruye@corporacionibgroup.pe', 'CORPORACION IBGROUP');
+        $mail->setFrom('aventuragym@gmail.com', 'AVENTURA GYM');
         $mail->addAddress('marxchip99@gmail.com'); // Cambiar esto al campo de correo electrónico del formulario
 
         // Contenido del correo
         $mail->isHTML(true);
-        $mail->Subject = 'IBCarsell Contacto';
+        $mail->Subject = 'AVENTURA GYM Contacto';
         $mail->Body = $contenidoCorreo;
 
         // Enviar el correo
