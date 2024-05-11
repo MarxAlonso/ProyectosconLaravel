@@ -14,4 +14,13 @@ class ServicesController extends Controller
 
         return view('Shared/_Layout', $data);
     }
+
+    public function reservar()
+    {
+        $data = [
+            'renderBody' => view('Services/reservar')
+        ];
+
+        return view('Shared/_Layout', $data);
+    }
 }
