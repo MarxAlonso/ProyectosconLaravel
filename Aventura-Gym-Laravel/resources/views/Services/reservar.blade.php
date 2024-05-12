@@ -2,7 +2,7 @@
     <section class="container pt-5 text-muted">
         <h2 class="text-center">Formulario de Reserva</h2>
         <br>
-        <form class="form_contactanos" action="/enviar-form-contacto" method="post" id="FormContacto">
+        <form class="form_contactanos" action="/enviar-form-reserva" method="post" id="FormContacto" enctype="multipart/form-data">
         @csrf    
         <div class="row">
                 <div class="col-12 col-md-6 mt-3" id="grupo__nombres">
@@ -38,7 +38,7 @@
                     </div>
                 <div class="col-12 col-md-6 mt-3">
                     <label>Dias para Entrenamiento Personal</label>
-                    <select class="form-select" name="interes" id="interes">
+                    <select class="form-select" name="dias" id="dias">
                         <option selected>Seleccione...</option>
                         <option value="De Lunes Martes Viernes">De Lunes Martes Viernes</option>
                         <option value="De Lunes Miercoles Sabado">De Lunes Miercoles Sabado</option>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-12 col-md-6 mt-3">
                     <label>¿Es uno de nuestros miembros del gym?</label>
-                    <select class="form-select" name="interes" id="interes">
+                    <select class="form-select" name="inscrito" id="inscrito">
                         <option selected>Seleccione...</option>
                         <option value="Si">Si</option>
                         <option value="No">No</option>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="col-12 col-md-6 mt-3">
                     <label>Horarios para Entrenamiento Personal</label>
-                    <select class="form-select" name="interes" id="interes">
+                    <select class="form-select" name="horario" id="horario">
                         <option selected>Seleccione...</option>
                         <option value="06:00am a 8:00am">06:00am a 8:00am</option>
                         <option value="08:00am a 10:00am">08:00am a 10:00am</option>

@@ -21,8 +21,11 @@ Route::get('/local-santanita', [LocalesController::class, 'localsantaanita']);
 
 Route::get('/contacto', [ContactoController::class, 'index']);
 Route::get('/nosotros', [NosotrosController::class, 'index']);
+
 Route::get('/servicios', [ServicesController::class, 'index']);
 Route::get('/reservar', [ServicesController::class, 'reservar']);
+Route::post('enviar-form-reserva', [ServicesController::class, 'enviarFormularioReserva']);
+
 Route::get('/terminos-condiciones', [TerminosController::class, 'index']);
 
 /* Apartado para validar los formularios */
