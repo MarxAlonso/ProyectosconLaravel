@@ -37,15 +37,36 @@
                                     
                     </div>
                 <div class="col-12 col-md-6 mt-3">
-                    <label>INTERES</label>
+                    <label>Dias para Entrenamiento Personal</label>
                     <select class="form-select" name="interes" id="interes">
                         <option selected>Seleccione...</option>
-                        <option value="Compra">Compra</option>
-                        <option value="Venta">Venta</option>
+                        <option value="De Lunes Martes Viernes">De Lunes Martes Viernes</option>
+                        <option value="De Lunes Miercoles Sabado">De Lunes Miercoles Sabado</option>
+                        <option value="De Lunes a Viernes">De Lunes a Viernes</option>
+                        <option value="De Lunes a Sabado">De Lunes a Sabado</option>
+                        <option value="Dias Personalizado">Dias Personalizado</option>
                     </select>
-                    
-                    <!-- input type="text" class="form-control" name="asunto" id="asunto" required="required" onkeypress="return validar(event)" minlength="10" maxlength="60"
-                        placeholder="Asunto"> -->
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <label>¿Es uno de nuestros miembros del gym?</label>
+                    <select class="form-select" name="interes" id="interes">
+                        <option selected>Seleccione...</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <label>Horarios para Entrenamiento Personal</label>
+                    <select class="form-select" name="interes" id="interes">
+                        <option selected>Seleccione...</option>
+                        <option value="06:00am a 8:00am">06:00am a 8:00am</option>
+                        <option value="08:00am a 10:00am">08:00am a 10:00am</option>
+                        <option value="10:00am a 12:00pm">10:00am a 12:00pm</option>
+                        <option value="02:00pm a 4:00pm">02:00pm a 4:00pm</option>
+                        <option value="04:00pm a 6:00pm">04:00pm a 6:00pm</option>
+                        <option value="06:00pm a 8:00pm">06:00pm a 8:00pm</option>
+                        <option value="Dias Personalizado">Horarios Personalizado</option>
+                    </select>
                 </div>
             </div>
             <div class="col-12 mt-3" id="grupo__comentario">
@@ -67,83 +88,12 @@
                 <button type="submit" class="btn btn-primary btn-lg btn-busqueda d-flex" id="button_Contacto" style="border:none;align-items: center;" name="register">
                     <span class="spinner-border spinner-border-sm" id="spinnerContacto" role="status" aria-hidden="true"
                         style="width: 1.4rem;height: 1.4rem;margin-right: 8px;display: none;"></span>
-                    Enviar Consulta
+                    Enviar Reserva
                 </button>
             </div>
-
-
-
         </form>
-        <?php 
-        /*include("Controllers/contacto.blade.php");*/
-        ?>
-
     </section>
     <br>
     <br>
     <br>
 </div>
-<br>
-<div class="container">
-    <section class="row">
-        <div class="col-lg-6 col-12 text-muted">
-            <h3>Información</h3>
-            <br>
-            <p class="text-justify">
-                Use cualquiera de estos medios para contactarnos. Lo atenderemos con la cordialidad que nos destaca.
-            </p>
-            <br>
-            <div class="d-flex flex-row">
-                <div class="d-flex align-items-center">
-                    <i class='fas fa-globe' style='font-size:28px'></i>
-                </div>
-                <div class="align-items-center col-6 pr-0 mx-2">
-                    <p class="mb-1 font-weight-bold">Web: </p>
-                    <p class="mb-1" style="font-size: 15px;">https://aventuragym-mrx.blogspot.com</p>
-                </div>
-            </div>
-            <br>
-            <!-- <div class="d-flex flex-row">
-                <div class="d-flex align-items-center">
-                    <i class='fas fa-phone-alt' style='font-size:28px'></i>
-                </div>
-                <div class="align-items-center col-6 pr-0">
-                    <p class="mb-1 mr-1 font-weight-bold">Móvil: </p>
-                    <p class="mb-1" style="font-size: 15px;">(511) 748 5112</p>
-                </div>
-            </div>
-            <br> -->
-            <div class="d-flex flex-row mb-4">
-                <div class="d-flex align-items-center">
-                    <i class='far fa-envelope-open' style='font-size:28px'></i>
-                </div>
-                <div class="align-items-center col-10 pr-0 mx-2">
-                    <p class="mb-1 font-weight-bold">E-Mail: </p>
-                    <p class="mb-1" style="font-size: 15px;">aventuragym@gmail.com</p>
-                </div>
-            </div>
-            <div class="d-flex flex-column mb-4">
-                <p class="font-weight-bold">Siguenos en: </p>
-                <div class="d-flex flex-row">
-                    <a class="nav-link text-muted me-3" href="https://www.facebook.com/"
-                        target="_black"><i class="fab fa-facebook-f" style="color:#0000ff; font-size:22px;"></i></a>
-                    <a class="nav-link text-muted me-3" href="https://twitter.com/" target="_black"><i
-                            class="fab fa-twitter" style="color:#00ffff; font-size:22px;"></i></a>
-                    <a class="nav-link text-muted me-3" href="https://www.linkedin.com/"
-                        target="_black"><i class="fab fa-linkedin" style="color:#008080; font-size:22px;"></i></a>
-                    <a class="nav-link text-muted me-3" href="https://www.instagram.com/" target="_black"><i
-                            class="fab fa-instagram" style="color:rgb(223,27,100); font-size:22px;"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 p-0 col-12 diseño-mapa">
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.7260968489993!2d-76.96745681305953!3d-12.081164945436388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6ff58810593%3A0xc81511ec9f263878!2sAv.%20Circunvalaci%C3%B3n%20del%20Golf%20los%20Incas%20208%2C%20Santiago%20de%20Surco%2015023!5e0!3m2!1ses-419!2spe!4v1616102516880!5m2!1ses-419!2spe"
-                    width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-</div>
-
-<br>
