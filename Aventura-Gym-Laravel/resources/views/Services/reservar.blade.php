@@ -78,6 +78,17 @@
                 </div>
                 <p class="formulario__input-error">Un comentario tiene que ser de minimo 100 caracteres y máximo de 500 caracteres y solo puede contener numeros, letras </p>
             </div>
+            
+            <div class="col mt-4">
+                <label>Comprobante y/o voucher del pago de la membresia del gimnasio</label><br>
+                <input id="archivo[]" name="archivo[]" type="file" multiple=true accept=".jpg, .jpeg, .png, .pdf" required>
+                <br><br>
+                <label>Dni del miembro del gimnasio</label><br>
+                <input id="archivo[]" name="archivo2[]" type="file" multiple=true accept=".jpg, .jpeg, .png, .pdf" required>
+                <br><br>
+                <label>Foto del carnet de la membresia del gimnasio</label><br>
+                <input id="archivo[]" name="archivo3[]" type="file" multiple=true accept=".jpg, .jpeg, .png, .pdf" required>
+            </div>
             <div class="col mt-4">
                 <div class="g-recaptcha" data-sitekey="6LcjeNYhAAAAADsEeMzI2CnqPdN4yufNFIjGxcD0"></div>
             </div>
