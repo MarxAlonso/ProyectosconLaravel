@@ -24,7 +24,7 @@
         <div class="col-12 col-md-10 col-lg-8 reserva">
             <h3><b>¿Desea unirse a nuestra comunidad?</b></h3><br>
             <p>¡Bienvenido a nuestra comunidad de fitness! En nuestro gimnasio, nos comprometemos a brindarle una experiencia única de entrenamiento, diseñada para ayudarlo a alcanzar sus metas de forma efectiva y disfrutar del proceso hacia un estilo de vida más saludable. Con instalaciones modernas, entrenadores expertos y una variedad de opciones de ejercicio, estamos aquí para apoyarlo en cada paso del camino.</p><br>
-            <a class="consulta" href="contacto">¡Únase a nosotros hoy mismo!</a>
+            <a class="consulta" href="comunidad">¡Únase a nosotros hoy mismo!</a>
             <br>
         </div>
     </div>

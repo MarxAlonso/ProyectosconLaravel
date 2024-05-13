@@ -24,6 +24,7 @@ Route::get('/nosotros', [NosotrosController::class, 'index']);
 
 Route::get('/servicios', [ServicesController::class, 'index']);
 Route::get('/reservar', [ServicesController::class, 'reservar']);
+Route::get('/comunidad', [ServicesController::class, 'comunidad']);
 Route::post('enviar-form-reserva', [ServicesController::class, 'enviarFormularioReserva']);
 
 Route::get('/terminos-condiciones', [TerminosController::class, 'index']);

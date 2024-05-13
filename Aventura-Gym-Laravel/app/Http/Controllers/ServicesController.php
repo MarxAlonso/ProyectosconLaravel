@@ -24,6 +24,15 @@ class ServicesController extends Controller
 
         return view('Shared/_Layout', $data);
     }
+    public function comunidad()
+    {
+        $data = [
+            'renderBody' => view('Services/comunidad')
+        ];
+
+        return view('Shared/_Layout', $data);
+    }
+    
     public function enviarFormularioReserva(Request $request)
     {
         $fecha = '<strong>Fecha: </strong>' . now()->setTimezone('America/Lima')->format('d-m-Y H:i:s') . "<br>";
