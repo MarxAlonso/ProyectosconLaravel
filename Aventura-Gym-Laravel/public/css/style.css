@@ -245,26 +245,93 @@ a.contact {
 /*Fin apartado de servicios*/
 
 
-/*Apartado de locales*/
-.local-santana{
-    /*background: linear-gradient(265deg, #313131fb, #000); margin: 20px;*/
-    background: linear-gradient(255deg, #11297a, #017732 , #7bc090 );
-    border:none; 
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); 
+/* Apartado de locales */
+.local-santana {
+    background: linear-gradient(255deg, #11297a, #017732, #7bc090);
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
     color: white;
     border-radius: 50px;
 }
-.titulo-localsantana{
-    text-align: center; 
+
+.titulo-localsantana {
+    text-align: center;
     margin-bottom: 20px;
     color: #045509;
 }
 
-.locales{
-    text-align: center; 
+.locales {
+    text-align: center;
     margin-bottom: 20px;
     color: #fff;
 }
+
+.galeria h1{
+    font-size: 40px;
+    font-weight: normal;
+    padding: 15px;
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+}
+.galeria .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+.galeria .image-container .image{
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.galeria .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: .2s linear;
+}
+.galeria .image-container .image:hover img{
+    transform: scale(1.1);
+}
+.galeria .popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.galeria .popup-image span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: inherit;
+}
+
+.galeria .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+@media (max-width:756px){
+    .galeria .popup-image img{
+        width: 95%;
+    }
+}
+
 .reserva-aqui{
     margin-top: 50em;
     margin-bottom: 100px; 
@@ -411,6 +478,19 @@ a.contact {
     /* Ancho del punto */
     margin-left: -1em;
     /* Mueve el punto al margen izquierdo */
+}
+
+.texto-centrado {
+    margin-top: 70px;
+    font-size: 25px;
+    color: #30519E;
+    margin-bottom: 140px;
+}
+
+@media screen and (max-width: 768px) {
+    .texto-centrado {
+        font-size: 16px;
+    }
 }
 
 .enlace-leer {

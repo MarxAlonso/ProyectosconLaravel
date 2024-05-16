@@ -40,4 +40,3 @@ $(document).ready(function(){
 });
 
 
- //   background: linear-gradient(2555deg, #1e1f1ffb, #000);
