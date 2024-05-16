@@ -33,7 +33,6 @@
                     Whatsapp: 978 105 066 <br>
                     Fijo local 1: 01 528 9667 <br>
                     Fijo Local 2: 01 688 4174 <br>
-                    Realizamos delivery</p>
             </div>
             <div class="footer-col col-sm-6 col-lg-3">
                 <div class="sociales">
