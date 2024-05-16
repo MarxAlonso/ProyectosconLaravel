@@ -1,48 +1,61 @@
 <br>
 <!--- Este es el apartado del Local Santa Ana -->
-<div class="container local-santana">
-    <h2 class="locales">Aventura Gym Local Santa Ana Pro</h2>
-    <div class="row justify-content-center">
-        <div class="col-md-8"> <!-- Ajusta el tamaño de la columna según tus necesidades -->
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-12 mb-3">
-                                <img src="{{asset('images/salonbaile-santa-ana.webp')}}" alt="Piso 2" class="img-fluid localsantana1">
-                            </div>
-                            <div class="col-12 mb-3">
-                                <img src="{{asset('images/entrfuncional-santa-ana.webp')}}" alt="Piso 4" class="img-fluid localsantana2">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="{{asset('images/localSantaAna.webp')}}" alt="Piso 3" class="img-fluid localsantana3">
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
+<hr class="lineal-local2">
+<br>
+<div class="container galeria local-santana">
+    <h1 class="locales">Aventura Gym Local Santa Ana</h1>
+    <div class="image-container">
+        <div class="image"><img src="{{asset('images/salonbaile-santa-ana.webp')}}" alt="Local Santa Ana"></div>
+        <div class="image"><img src="{{asset('images/entrfuncional-santa-ana.webp')}}" alt="Local Santa Ana"></div>
+        <div class="image"><img src="{{asset('images/localSantaAna.webp')}}" alt="Local Santa Ana"></div>
+    </div>
+
+    <div class="popup-image">
+        <span class="close">&times;</span>
+        <img src="{{asset('images/salonbaile-santa-ana.webp')}}" alt="Local Naranjal">
     </div>
 </div>
 <br>
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-8 text-center"> <!-- Ajusta el tamaño de la columna según tus necesidades -->
-            <a href="https://g.co/kgs/NFSSXim"  target="_blank" class="reserva-aqui">VER UBICACION</a>
+            <a href="https://g.co/kgs/NFSSXim" target="_blank" class="reserva-aqui">VER UBICACION</a>
         </div>
     </div>
 </div>
 <br>
-<div class="container">
-    <div class="text-center redes">
-        <h2><b>Visita nuestras redes sociales</b></h2><br>
-        <a href="https://www.facebook.com/people/Torito-Grill/100063782141554/" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
-        <a href="https://www.instagram.com/toritogrillperu/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
-        <a href="https://www.tiktok.com/@toritogrillperu" target="_blank"><i class="bi bi-tiktok"></i> Tik Tok</a>
-        <a href="https://wa.link/3mxkpp" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
-    </div>
-</div>
-<br>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Selecciona todas las imágenes dentro del contenedor con la clase 'image-container'
+        document.querySelectorAll('.image-container img').forEach(image => {
+            // Añade un evento de clic a cada imagen
+            image.onclick = () => {
+                // Selecciona el elemento de la imagen emergente con la clase 'popup-image'
+                // y establece la propiedad de visualización en 'block', lo que hace que la imagen aparezca
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
 
+        // Selecciona el elemento con la clase 'close' dentro del elemento '.popup-image'
+        document.querySelector('.popup-image .close').onclick = () => {
+            // Selecciona el elemento de la imagen emergente con la clase 'popup-image'
+            // y establece la propiedad de visualización en 'none', lo que hace que la imagen desaparezca
+            document.querySelector('.popup-image').style.display = 'none';
+        };
 
+        // Cierra la imagen emergente al presionar la tecla 'Esc'
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                document.querySelector('.popup-image').style.display = 'none';
+            }
+        });
+
+        // Cierra la imagen emergente al hacer clic en el contorno negro transparente
+        document.querySelector('.popup-image').addEventListener('click', (event) => {
+            if (event.target === document.querySelector('.popup-image')) {
+                document.querySelector('.popup-image').style.display = 'none';
+            }
+        });
+    });
+</script>

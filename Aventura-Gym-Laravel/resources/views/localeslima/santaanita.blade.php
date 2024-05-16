@@ -2,7 +2,7 @@
 <hr class="lineal-local2">
 <br>
 <div class="container galeria local-santana">
-    <h1 class="locales">Aventura Gym Local Naranjal</h1>
+    <h1 class="locales">Aventura Gym Local Santa Anita</h1>
     <div class="image-container">
         <div class="image"><img src="{{asset('images/salon-bailesantaanita.webp')}}" alt="Local Santa Anita"></div>
         <div class="image"><img src="{{asset('images/entreno-santaanita.webp')}}" alt="Local Santa Anita"></div>
@@ -11,7 +11,7 @@
 
     <div class="popup-image">
         <span class="close">&times;</span>
-        <img src="{{asset('images/salonentreno-naranjal.webp')}}" alt="Local Naranjal">
+        <img src="{{asset('images/salon-bailesantaanita.webp')}}" alt="Local Naranjal">
     </div>
 </div>
 <br>
