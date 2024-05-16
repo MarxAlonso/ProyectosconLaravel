@@ -268,9 +268,9 @@ a.contact {
 
 .galeria h1{
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bolder;
     padding: 15px;
-    color: #333;
+    color: #fff;
     text-align: center;
     text-transform: capitalize;
 }
