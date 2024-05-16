@@ -1,28 +1,18 @@
-
-<!-- Nuevo apartado del local San Martin de Porrews -->
+<br>
+<!-- Nuevo apartado del local San Martin de Porres -->
 <hr class="lineal-local2">
-<div class="container local-santana">
-    <h2 class="locales">Aventura Gym Local San Martin de Porres</h2>
-    <div class="row justify-content-center">
-        <div class="col-md-8"> <!-- Ajusta el tamaño de la columna según tus necesidades -->
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-12 mb-3">
-                                <img src="{{asset('images/entreno-sanmartinporres.webp')}}" alt="Piso 2" class="img-fluid localsanmartin1">
-                            </div>
-                            <div class="col-12 mb-3">
-                                <img src="{{asset('images/salon-sanmartinporres.webp')}}" alt="Piso 4" class="img-fluid localsanmartin2">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="{{asset('images/local-sanmartinporres.webp')}}" alt="Local Universitaria 2751" class="img-fluid localsanmartin3">
-                    </div>
-                </div>
-            </div>
-        </div>
+<br>
+<div class="container galeria local-santana">
+    <h1 class="locales">Aventura Gym Local San Martin de Porres</h1>
+    <div class="image-container">
+        <div class="image"><img src="{{asset('images/entreno-sanmartinporres.webp')}}" alt="Local San Martin de Porres"></div>
+        <div class="image"><img src="{{asset('images/salon-sanmartinporres.webp')}}" alt="Local San Martin de Porres"></div>
+        <div class="image"><img src="{{asset('images/local-sanmartinporres.webp')}}" alt="Local San Martin de Porres"></div>
+    </div>
+
+    <div class="popup-image">
+        <span class="close">&times;</span>
+        <img src="{{asset('images/local-sanmartinporres.webp')}}" alt="Local San Martin de Porres">
     </div>
 </div>
 <br>
@@ -34,3 +24,38 @@
     </div>
 </div>
 <br>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Selecciona todas las imágenes dentro del contenedor con la clase 'image-container'
+        document.querySelectorAll('.image-container img').forEach(image => {
+            // Añade un evento de clic a cada imagen
+            image.onclick = () => {
+                // Selecciona el elemento de la imagen emergente con la clase 'popup-image'
+                // y establece la propiedad de visualización en 'block', lo que hace que la imagen aparezca
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        // Selecciona el elemento con la clase 'close' dentro del elemento '.popup-image'
+        document.querySelector('.popup-image .close').onclick = () => {
+            // Selecciona el elemento de la imagen emergente con la clase 'popup-image'
+            // y establece la propiedad de visualización en 'none', lo que hace que la imagen desaparezca
+            document.querySelector('.popup-image').style.display = 'none';
+        };
+
+        // Cierra la imagen emergente al presionar la tecla 'Esc'
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                document.querySelector('.popup-image').style.display = 'none';
+            }
+        });
+
+        // Cierra la imagen emergente al hacer clic en el contorno negro transparente
+        document.querySelector('.popup-image').addEventListener('click', (event) => {
+            if (event.target === document.querySelector('.popup-image')) {
+                document.querySelector('.popup-image').style.display = 'none';
+            }
+        });
+    });
+</script>
